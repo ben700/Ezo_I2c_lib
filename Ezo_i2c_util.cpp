@@ -26,6 +26,10 @@ void print_success_or_error(Ezo_board &Device, const char* success_string) {
     case Ezo_board::NO_DATA:
       Serial.print("No Data ");       //the sensor has no data to send.
       break;
+      
+    case Ezo_board::NOT_READ_CMD:
+      Serial.print("Not read command ");       //the sensor has no data to send.
+      break;
   }
 }
 
